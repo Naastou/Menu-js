@@ -146,12 +146,12 @@ function displayAllCategoriesButtons() {
 
 displayAllCategoriesButtons();
 
+// on filtre les boutons par catégorie
 function filterMenuByCategory(category) {
   const menuToDisplay = menu.filter(function (menuItem) {
     if (menuItem.category === category) {
       return menuItem;
     }
   });
-
   return menuToDisplay;
 }
